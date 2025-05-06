@@ -21,11 +21,6 @@ body {
     border-radius: 25px;
     
 }
-.hamburger {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-  }
 #nav-items{
     margin: 0;
     display: flex;
@@ -74,6 +69,7 @@ border-radius: 2px;
 }
 .intro{
     padding-bottom: 20px;
+    text-align: left;
     
 }
 .gradient-border{
@@ -105,13 +101,15 @@ border-radius: 2px;
     font-size: 22px;
     font-weight:500;
     margin-bottom: 0;
-    justify-self: left;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    text-align: left !important;
 }
 .sub-text{
     font-size: 15px;
     padding: 0px;
-    justify-self: left;
-    text-align: left;
+    justify-self: left !important;
+    text-align: left !important;
 }
 #btn1{
    background-color: rgb(26, 26, 26);
@@ -119,7 +117,7 @@ border-radius: 2px;
    font-size: 12px;   
 }
 #btn1 a{
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 #message-icon{
