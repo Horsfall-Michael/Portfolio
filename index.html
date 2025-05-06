@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Horsfall Michael">
+    <meta name="description" content="My Portfolio">
+    <title>Horsfall Michael</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link  rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <header>
+         <nav id="navbar">
+            <ul id="nav-items">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="projects.html">Projects</a></li>
+            </ul>
+         </nav>
+    </header>
+    
+    <main>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6" id="info-col">
+              <div id="sidebar">
+                <section class="personal-info">
+                  <div class="intro">
+                    <div id="name">
+                      <div class="gradient-border">
+                        <img src="img/1689526992875_1708341489578.jpg" alt="My picture" class="my-img">
+                      </div>
+                      <h1>Michael Horsfall</h1> 
+                    </div>
+                    <p class="main-text">Front-End Developer</p>
+                    <p class="sub-text">Computer Science grad passionate about crafting responsive, user-friendly interfaces. <br> Open to oppurtunities to build learn and grow.</p>
+                  </div>
+                  <button type="button" class="btn btn-dark" id="btn1"><a href="#contact"><i class="fa-regular fa-comment" id="message-icon"></i>Discuss a Project</a></button>
+               </section>
+  
+               <section class="skills">
+                  <div class="tags">
+                    <span class="tag"> &lt;/&gt; HTML</span>
+                    <span class="tag">{} CSS</span>
+                    <span class="tag">{;} Java Script</span>
+                    <span class="tag"> Bootstrap</span>
+                  </div>
+               </section>
+  
+               <section class="reviews">
+                  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+                       
+                    <div class="carousel-inner text-center p-4 border rounded shadow-sm bg-white" style="max-width: 600px; margin: auto;">
+                      <div class="carousel-item active">
+                        <p class="mb-3">“Need a wwebsite that stands out? I'm able to build responsive and standard websites that take you to the next level.”</p>
+                          <!-- <div><strong>Satya</strong><br><small class="text-muted">Co Founder of Sprrint</small></div> -->
+                          </div>
+                          <div class="carousel-item">
+                            <p class="mb-3">“Working with me is an incredible experience. My work speaks volume, and my commitment to quality is unmatched.”</p>
+                            <!-- <div><strong>Aisha</strong><br><small class="text-muted">UX Lead, Bright Studio</small></div> -->
+                            </div>
+                            <div class="carousel-item">
+                              <p class="mb-3"> “Problems with your site? I'm able optimize your site, making it the next best thing.”</p>
+                              <!-- <div><strong>James</strong><br><small class="text-muted">Startup Founder</small></div> -->
+                            </div>
+                          </div>
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                          
+                          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          </button>
+                        </div>           
+                      </section>
+                  </div>
+                </div>
+
+
+
+              <div class="col" id="sample-col">
+                <div id="mainbar">
+                  <p class="header2">Work in Progress</p>
+                  <div class="samples">
+                    <div class="work">
+                      <img src="img/Ex-budget.png" class="sample-img">
+                      <p class="main-text"><a href="#">Ex-budget</a></p>
+                      <p class="lang"> HTML &nbsp; CSS </p>
+                      <button type="button" class="view-project-btn"><a href="index.html" >Veiw Project<hr></a></button> 
+                    </div>
+                    <div class="work">
+                      <img src="img/LLC.png" class="sample-img">
+                      <p class="main-text"><a href="#">Little Lemon Cafe</a></p>
+                      <p class="lang"> HTML &nbsp; CSS &nbsp; Js </p>
+                      <button type="button" class="view-project-btn"><a href="index.html" >Veiw Project<hr></a></button> 
+                    </div>
+                </div>
+              </div>
+           </div>
+         </div>
+     </main>
+
+
+    <footer>
+      <section id="contact">
+        <div class="footer-intro">
+          <h1>Contact</h1>
+          <p class="sub-text">I would like to hear aboout your project and how I could help you. <br>Please fill the form below and I will get back to you as soon as possible.</p>
+        </div>
+        <div>
+          <form name="contact" action="POST" method="POST" data-netlify="true">
+            <fieldset>
+                <input type="hidden" name="form-name" value="contact">
+                <p class="input">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </p>
+                <hr>
+                <p class="input">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <hr>
+                <p class="input">
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea name="message" id="message"  required></textarea>
+                </p>
+                <hr>
+                <p class="hidden">
+                   <label>Don't fill this out if your human:</label>
+                   <input name="bot-field">
+               </p>
+            </fieldset>
+            <div class="button-container">
+              <button type="submit" class="send-btn">Send Message <hr></button> 
+            </div>
+          </form>
+        </div>   
+      </section>
+      <hr>
+      <section class="socials">
+        <div>
+          <p>Connect with me on</p>
+        </div>
+        <div>
+          <ul>
+            <li><a href="https://github.com/Horsfall-Michael"><img src="img/github-white-icon.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/michael-horsfall-869b9b343"><img src="img/linkedin-app-white-icon.png"></a></li>
+            <li><a href="https://x.com/soft_guy__"><img src="img/x-social-media-white-icon.png"></a></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <script src="myscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>   
+</body>
+</html>
