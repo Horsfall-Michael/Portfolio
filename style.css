@@ -5,6 +5,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     background: #f5f5f5;
     font-family: 'Inter',sans-serif;
@@ -12,6 +14,11 @@ body {
     margin: 0;
     color: #000000;
 }
+
+main {
+  flex: 1;
+}
+
 #navbar{
     margin: 15px;
     height: 8vh;
@@ -227,13 +234,34 @@ border-radius: 2px;
 
  /* projects Page */
 
-.sorry{
-    justify-self: center;
-    text-align: center;
-    padding: 30vh;
-    color: #ccc;
-    width: 90%;
+.completed-projects{
+    margin:20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+.project{
+    margin: 20px;
+    width: 20rem;
+}
+.project img{
+    width: 20rem;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+}
+.project p{
+    text-align: left;
+    padding: 5px;
+}
+.project a{
+    text-decoration: none;
+    color: inherit;
+}
+.project button{
+    padding-right: 10px;
+}
+
+
 
 
 
@@ -428,15 +456,6 @@ p textarea{
         width:25px;
     }
 
-
-  /*  Projects page */
-    
-  .sorry{
-    font-size: 18px;
-     padding: 10vh;   
- }
- 
-
 }
 
 
@@ -559,16 +578,16 @@ p textarea{
         display: flex;
     }
     
-
-    /*  Projects page */
-    
-.sorry{
-   font-size: 18px;
-    padding: 11vh;
-    margin-bottom: 200px;
-    margin-top:200px;
-    
-}
      
 
 }
+
+
+@media (max-width: 480px) {
+    .project{
+        width: 18rem;
+    }
+    .project img{
+        width: 18rem;
+    }
+  }
